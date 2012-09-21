@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Goodbye</title>
+<script type="text/javascript">
+function closeWindow() {
+    if (true) {
+        setTimeout(function() {
+            window.focus();
+            window.close();
+            console.log('closing window? ' + window.closed);
+        }, 2000);
+    }
+    return true;
+}
+
+</script>
+</head>
+<body onload="closeWindow();">
+</body>
+</html>
