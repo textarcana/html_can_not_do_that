@@ -1,0 +1,1 @@
+<a href="http://www.flickr.com/photos/thefangmonster/490423135/" title="HTML CAN NOT DO THAT!!!1!! by Noah Sussman, on Flickr"><img src="http://farm1.staticflickr.com/221/490423135_a7e8e7b8fa.jpg" width="421" height="500" alt="HTML CAN NOT DO THAT!!!1!!"></a>
