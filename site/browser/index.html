@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>All about your browser.</title>
+</head>
+<body style="font-size: 300%;">
+<h1>All about your browser.</h1>
+<div>
+  <ol id="content">
+  </ol>
+</div>
+<script type="text/javascript">
+    var addInfo = function (message) {
+        var info = document.createElement('li');
+
+        info.innerHTML = message;
+
+        document.getElementById('content').appendChild(info);
+    }
+
+    addInfo(navigator.userAgent);
+    addInfo(document.cookie);
+</script>
+</body>
+</html>
