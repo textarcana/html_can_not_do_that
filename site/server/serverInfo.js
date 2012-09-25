@@ -7,4 +7,8 @@ var getScriptURL = (function() {
     return function() { return myScript.src; };
 })();
 
-document.getElementById('info').innerHTML = 'This script was loaded  from: ' + getScriptURL();
+document.getElementById('info').innerHTML += 'This script was loaded  from: ' + getScriptURL();
+
+document.getElementById('info').innerHTML += '<br>Root domain: ' + getScriptURL().match(/\/\/[^/]+/)[0];
+
+document.getElementById('info').innerHTML += '<br>Script file: ' + getScriptURL().match(/[^/]+\.js$/)[0];
