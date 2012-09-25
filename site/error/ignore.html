@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ignore JavaScript Errors</title>
+  </head>
+  <body>
+    <h1>Ignore JavaScript Errors</h1>
+
+    <p>How to ignore errors. Makes code much, much harder to debug so
+      use at your own risk.</p>
+
+    <script type="text/javascript">
+        try {
+            aVariableThatIsNotDefined;
+        } catch (e) {
+            console.log('Error ignored: ', e);
+        }
+
+        window.onerror = function (e) {
+            console.log('Error ignored: ', e);
+            return true;
+        };
+
+        aVariableThatIsNotDefined;
+    </script>
+  </body>
+</html>
